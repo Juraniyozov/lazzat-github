@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.big{
+    padding: 50px 150px;
+    /* margin: 40px auto; */
+}
+.top{
+    background-image: url("img/chef.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 130px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+.h1{
+    font-size: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.title{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+.middle{
+   text-align: center;
+   text-transform: uppercase;
+   padding-bottom: 50px;
+}
+.a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: white;
+    transition: 0.2s;
+}
+.line{
+    height: 5px;
+    background-color: rgb(227, 225, 225);
+    margin: 20px 0;
+    transition: 0.4s all linear;
+}
+.a:hover{
+    background-color: #EFEFEF;
+    color: black;
+    padding: 23px;
+}
+.bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.box{
+    width: 30%;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.meal{
+    text-transform: uppercase;
+    padding: 15px 30px;
+    margin: 15px 0;
+    border: none;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: #E4A45D;
+}
+.h3{
+    margin-top: 0;
+}
+.meal3{
+    background-color: #7ED6DF;
+}
+.meal4{
+    background-color: #FF7979;
+}
+.meal5{
+    background-color: #BADC58;
+}
+.meal6{
+    background-color: #FF7979;
+}
+.h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.div{
+    text-transform: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.end{
+    background-color: white;
+    color: #EB4D4B;
+    border: 5px solid #EB4D4B;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px 35px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.endbtn{
+    text-align: center;
+}
+.end:hover{
+    background-color: #EB4D4B;
+    color: white;
+}
+.footer{
+    background-image: url("img/subscribe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 300px;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.input{
+    width: 65%;
+    padding: 12px;
+    font-size: 20px;
+    outline: none;
+    border: 2px solid #ccc;
+    font-weight: bold;
+}
+.input::placeholder{
+    color: gray;
+}
+.input:focus{
+    border: 2px solid #EB4D4B;
+    background-color: transparent;
+    color: #EB4D4B;
+    text-transform: capitalize;
+}
+.input:focus::placeholder{
+    color: #EB4D4B;
+}
+.btn{
+    width: 30%;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: #EB4D4B;
+    color: white;
+    border: 2px solid #EB4D4B;
+}
+.btn:hover{
+    background-color: transparent;
+    color: #EB4D4B;
+    border: 2px solid #EB4D4B;
+}
+.comment{
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    margin-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+@media(max-width: 1140px){
+    .big{
+        padding: 0 50px;
+    }
+    .end{
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 960px){
+    .box{
+        width: 48%;
+    }
+    .big{
+        padding: 15 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .img{
+        width: 100%;
+        display: block;
+    }
+    .end{
+        margin-bottom: 30px;
+    }
+    .footer{
+        padding: 70px 150px;
+    }
+}
+@media(max-width: 700px){
+    .big{
+        padding: 10px 20px;
+    }
+    .box{
+        width: 100%;
+    }
+    .img{
+        width: 100%;
+        display: block;
+    }
+    .a{
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+    .input{
+        display: block;
+        width: 100%;  
+        padding: 8px;
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    .btn{
+        margin: auto;
+    }
+    .footer{
+        padding: 20px 50px;
+    }
+    .div{
+        font-size: 19px;
+    }
+    .end{
+        padding: 10px 25px;
+    }
+}
